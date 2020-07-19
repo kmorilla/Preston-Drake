@@ -210,3 +210,69 @@ nav {
     font-family: var(--other-font);
     margin-bottom: 0;
 }
+
+.logos {
+    background-color: var(--main-color);
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.logos img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/*------------------------------------------
+                    Contact
+-------------------------------------------*/
+
+#contact .wrap {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-option {
+    display: flex;
+    border: 1px solid var(--second-color);
+    width: 100%;
+    padding: .5rem 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.option {
+    margin: auto;
+    display: flex;
+}
+
+#contact p {
+    display: inline;
+    font-size: 1.1rem;
+    margin: 0 0 0 5px;
+}
+
+#contact ion-icon {
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin: auto 0;
+}
+
+
+/*------------------------------------------
+                    Footer
+-------------------------------------------*/
+
+footer {
+    background-color: #1D1D1D;
+    height: 70px;
+}
+
+footer p {
+    color: #fff;
+    margin-top: auto;
+    margin-bottom: auto;
+}
