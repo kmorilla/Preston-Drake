@@ -7,7 +7,14 @@ $(document).ready(function () {
     $('.candidates').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 1
+    });
+
+    $('.mosaic-grids').slick({
+        centerMode: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
     $('.slick-prev').empty().append('<ion-icon name="caret-back-sharp"></ion-icon>');
