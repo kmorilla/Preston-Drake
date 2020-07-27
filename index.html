@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;600;700&display=swap"
         rel="stylesheet">
 
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+
     <link rel="stylesheet" href="./css/site.css">
     <title>Preston Drake Management</title>
 </head>
@@ -153,11 +156,32 @@
             <div class="row">
                 <div class="col-12">
                     <div class="mosaic-grid">
-                        <div class="mosaic-img1"><img src="./img/photo-1521745628017-e158aefe8c98.jpg" alt=""></div>
-                        <div class="mosaic-img2"><img src="./img/photo-1541872705-1f73c6400ec9.jpg" alt=""></div>
-                        <div class="mosaic-img3"><img src="./img/photo-1469248620856-e8c981d98aff.jpg" alt=""></div>
-                        <div class="mosaic-img4"><img src="./img/photo-1555293442-818eb55f7ca0.jpg" alt=""></div>
-                        <div class="mosaic-img5"><img src="./img/photo-1587847870627-a34356e5ae67.jpg" alt=""></div>
+                        <a id="mosaic-img1" data-toggle="modal" data-target="#exampleModalCenter"><img
+                                src="./img/photo-1521745628017-e158aefe8c98.jpg" alt=""></a>
+                        <a id="mosaic-img2" data-toggle="modal" data-target="#exampleModalCenter"><img
+                                src="./img/photo-1541872705-1f73c6400ec9.jpg" alt=""></a>
+                        <a id="mosaic-img3" data-toggle="modal" data-target="#exampleModalCenter"><img
+                                src="./img/photo-1469248620856-e8c981d98aff.jpg" alt=""></a>
+                        <a id="mosaic-img4" data-toggle="modal" data-target="#exampleModalCenter"><img
+                                src="./img/photo-1555293442-818eb55f7ca0.jpg" alt=""></a>
+                        <a id="mosaic-img5" data-toggle="modal" data-target="#exampleModalCenter"><img
+                                src="./img/photo-1587847870627-a34356e5ae67.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
                     </div>
                 </div>
             </div>
@@ -173,10 +197,22 @@
             </div>
             <div class="row mt-3">
                 <div class="col-12">
-                    <div class="wrap">
-                        <img src="./img/colorful-dress.jpg" alt="">
-                        <p class="name">Lorem ipsum </p>
-                        <p>Lorem ipsum dolor sit amet</p>
+                    <div class="candidates">
+                        <div class="wrap">
+                            <img src="./img/colorful-dress.jpg" alt="">
+                            <p class="name">Lorem ipsum </p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="wrap">
+                            <img src="./img/colorful-dress.jpg" alt="">
+                            <p class="name">Lorem ipsum </p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
+                        <div class="wrap">
+                            <img src="./img/colorful-dress.jpg" alt="">
+                            <p class="name">Lorem ipsum </p>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -231,8 +267,13 @@
     <!-- Bootstrap -->
     <script src="./js/bootstrap.min.js"></script>
 
+    <!-- Slick -->
+    <script src="./js/slick.js"></script>
+
     <!-- Ionic -->
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
