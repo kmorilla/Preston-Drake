@@ -382,11 +382,16 @@ nav {
 #represent .wrap {
     width: 100%;
     text-align: center;
+    position: relative;;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 #represent .wrap img {
-    width: 120px;
-    height: 120px;
+    width: 30vw;
+    height: 30vw;
+    max-width: 150px;
+    max-height: 150px;
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
@@ -403,22 +408,48 @@ nav {
 
 .logos {
     background-color: var(--main-color);
-    height: auto;
-    padding: 1rem 0;
+    padding: 1rem .5rem;
     margin-top: 2rem;
+    position: relative;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.logo {
+    max-width: 15%;  
+    margin: auto;
+    padding: 0 5px;
 }
 
 .logos img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 100%;
+    object-fit: contain;
     object-position: center;
 }
 
 @media (min-width: 576px) {
-    #represent .wrap img {
-        width: min(17vw, 200px);
-        height: min(17vw, 200px);
+    .logo {
+        max-width: 10%;
+    }    
+}
+
+@media (min-width: 768px) {
+    
+    #represent h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+
+    #represent h3::after {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        border-bottom: 1px solid var(--main-color);
+        top: 0;
+        left: calc(25%/2);
     }
 }
 
