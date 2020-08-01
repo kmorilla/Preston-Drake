@@ -4,25 +4,45 @@ $(document).ready(function () {
         PopUp(source)
     });
 
-    $('.candidates').slick({
-        infinite: true,
-        slidesToShow: 2,
-        slidesToScroll: 1
+    $('#about img').click(function () {
+        source = $(this).attr('src');
+        PopUp(source)
     });
 
-    $('.mosaic-grids').slick({
-        centerMode: false,
+    $('.candidates').slick({
         infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
+        mobileFirst: true,
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                }
+            },
+        ]
     });
+
+    // $('.mosaic-grids').slick({
+    //     centerMode: false,
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1
+    // });
 
     $('.slick-prev').empty().append('<ion-icon name="caret-back-sharp"></ion-icon>');
     $('.slick-next').empty().append('<ion-icon name="caret-forward-sharp"></ion-icon>');
 });
 
 function PopUp(image) {
-    $('#mosaic .modal-body img').remove();
-    $('#mosaic .modal-body').append('<img src="' + image + '" >');
+    $('.modal-body img').remove();
+    $('.modal-body').append('<img src="' + image + '" >');
 }
 
