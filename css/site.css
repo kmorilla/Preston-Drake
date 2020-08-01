@@ -2,7 +2,7 @@
     --main-color: #F2CB40;
     --second-color: #142E48;
     --other-font: 'Playfair Display', serif;
-    font-size: min(5vw, 16px);
+    font-size: min(4.5vw, 16px);
 }
 
 body {
