@@ -147,12 +147,11 @@ nav {
 -------------------------------------------*/
 
 #home {
-    height: 300px;
+    height: 250px;
     background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2)), url("../img/photo-1521504794987-75e6b93ee2b7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     margin-top: 65px;
 }
 
@@ -164,7 +163,7 @@ nav {
     text-align: center;
 }
 
-#home .container, #home .row, #home .col-12 {
+#home .row, #home .col-12 {
     height: 100%;
 }
 
@@ -178,25 +177,18 @@ nav {
 
 #home .wrap::before {
     top: 0;
-    left: calc((100vw - 100%)/2 * -1);
+    left: 0;
     content: '';
     position: absolute;
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background-color: var(--main-color);
     opacity: .75;
-
 }
 
 @media (max-width: 575.98px) {
     #home h1 {
         font-size: 2rem;
-    }
-}
-
-@media (min-width: 576px) {
-    #home {
-        height: 300px;
     }
 }
 
