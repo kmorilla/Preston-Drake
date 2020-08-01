@@ -44,10 +44,6 @@ button:focus {
     padding-bottom: 80px;
 }
 
-.col-11 {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 
 /*------------------------------------------
@@ -202,6 +198,11 @@ nav {
                     About
 -------------------------------------------*/
 
+#about .col-11 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #about .img-wrap {
     width: 100%;
     height: min(55vw, 220px);
@@ -224,6 +225,11 @@ nav {
 
 @media (min-width: 768px) {
    
+    #about .col-11 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     #about .img-wrap {
         height: 100%;
         padding-top: 57px;
