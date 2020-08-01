@@ -2,6 +2,7 @@
     --main-color: #F2CB40;
     --second-color: #142E48;
     --other-font: 'Playfair Display', serif;
+    font-size: min(5vw, 16px);
 }
 
 body {
@@ -30,18 +31,18 @@ button:focus {
 }
 
 .padding-tb {
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
 }
 
 /* Fix me! */
 
 .padding-t {
-    padding-top: 80px;
+    padding-top: 4.5rem;
 }
 
 .padding-b {
-    padding-bottom: 80px;
+    padding-bottom: 4.5rem;
 }
 
 
