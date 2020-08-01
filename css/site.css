@@ -147,8 +147,8 @@ nav {
 -------------------------------------------*/
 
 #home {
-    height: 400px;
-    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../img/photo-1521504794987-75e6b93ee2b7.jpg");
+    height: 300px;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2)), url("../img/photo-1521504794987-75e6b93ee2b7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -160,15 +160,17 @@ nav {
     font-weight: 600;
     color: #fff;
     margin: auto;
+    z-index: 10;
+    text-align: center;
 }
 
-#home .row, #home .col-12 {
+#home .container, #home .row, #home .col-12 {
     height: 100%;
 }
 
 #home .wrap {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     margin: auto;
     position: relative;
@@ -176,17 +178,26 @@ nav {
 
 #home .wrap::before {
     top: 0;
-    left: 0;
+    left: calc((100vw - 100%)/2 * -1);
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 100vw;
     background-color: var(--main-color);
     opacity: .75;
+
 }
 
-#home h1 {
-    z-index: 10;
+@media (max-width: 575.98px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    #home {
+        height: 300px;
+    }
 }
 
 
@@ -194,13 +205,12 @@ nav {
                     About
 -------------------------------------------*/
 
-.about-img-wrap {
+#about .img-wrap {
     width: 100%;
     max-width: 340px;
     display: block;
     margin: 0 auto 2rem auto;
 }
-
 
 #about img {
     height: auto;
@@ -210,8 +220,14 @@ nav {
 }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-    .about-img-wrap {
+    #about .img-wrap {
         margin-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    #about .w-100 {
+        margin-top: 57px;
     }
 }
 
@@ -225,10 +241,29 @@ nav {
     border-left: 1px solid var(--main-color);
 }
 
+#services .img-wrap {
+    width: 100%;
+    max-width: 340px;
+    display: block;
+    margin-bottom: 2rem;
+}
+
 #services img {
     width: 100%;
     height: auto;
-    margin-bottom: 1rem;
+    object-fit: contain;
+    object-position: center;
+}
+
+#services ul {
+    padding-inline-start: 25px;
+}
+
+@media (min-width: 768px) {
+    #services .img-wrap {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 

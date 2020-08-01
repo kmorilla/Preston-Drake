@@ -1,13 +1,18 @@
 $(document).ready(function () {
-    $('.mosaic-grid img').click(function () {
+
+    $(window).resize(function () {
+        NavBar();
+    });
+
+    $('img').click(function () {
         source = $(this).attr('src');
         PopUp(source)
     });
 
-    $('#about img').click(function () {
-        source = $(this).attr('src');
-        PopUp(source)
-    });
+    // $('#about img').click(function () {
+    //     source = $(this).attr('src');
+    //     PopUp(source)
+    // });
 
     $('.candidates').slick({
         infinite: true,
@@ -44,5 +49,10 @@ $(document).ready(function () {
 function PopUp(image) {
     $('.modal-body img').remove();
     $('.modal-body').append('<img src="' + image + '" >');
+}
+
+function NavBar() {
+    var navHeight = $('nav').outerHeight(true);
+    $('#home').css('margin-top', navHeight);
 }
 
