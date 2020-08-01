@@ -430,7 +430,7 @@ nav {
 
 @media (min-width: 576px) {
     .logo {
-        max-width: 10%;
+        max-width: 14%;
     }    
 }
 
@@ -450,7 +450,7 @@ nav {
         border-bottom: 1px solid var(--main-color);
         top: 0;
         left: calc(25%/2);
-    }
+    }  
 }
 
 /*------------------------------------------

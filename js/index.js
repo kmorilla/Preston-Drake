@@ -3,6 +3,7 @@ $(document).ready(function () {
     NavBar();
     ImgClick();
     CampaignHeaderAlignment();
+    LogoBuilder();
     // MosaicRow();
 
     $(window).resize(function () {
@@ -37,6 +38,21 @@ function CampaignHeaderAlignment() {
         var campaignMargin = ((wrapWidth - (colWidth * 2)) / 2) + 15;
         $('.campaign-management h4').css('margin-left', campaignMargin);
     }
+}
+
+function LogoBuilder() {
+    var folder = "./img/logos";
+
+    $.ajax({
+        url: folder,
+        success: function (data) {
+            $(data).find("a").attr("href", function (i, val) {
+                if (val.match(/\.(jpe?g|png|gif)$/)) {
+                    $(".logos").append("<div class='logo'><img src='" + val + "'></div>");
+                }
+            });
+        }
+    });
 }
 
 // function MosaicRow() {
