@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+    NavBar();
     $(window).resize(function () {
         NavBar();
     });
