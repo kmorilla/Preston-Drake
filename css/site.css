@@ -147,12 +147,11 @@ nav {
 -------------------------------------------*/
 
 #home {
-    height: 250px;
     background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2)), url("../img/photo-1521504794987-75e6b93ee2b7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 65px;
+    padding: 3rem 0;
 }
 
 #home h1 {
@@ -163,7 +162,7 @@ nav {
     text-align: center;
 }
 
-#home .row, #home .col-12 {
+#home .container, #home .row, #home .col-12 {
     height: 100%;
 }
 
@@ -189,6 +188,12 @@ nav {
 @media (max-width: 575.98px) {
     #home h1 {
         font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) {
+    #home {
+        background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.2)), url("../img/photo-1587290547774-9590511b5891.jpg");
     }
 }
 
