@@ -250,15 +250,15 @@ nav {
 
 #services .img-wrap {
     width: 100%;
-    max-width: 340px;
+    height: min(35vw, 200px);
     display: block;
     margin-bottom: 2rem;
 }
 
 #services img {
     width: 100%;
-    height: auto;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -267,10 +267,36 @@ nav {
 }
 
 @media (min-width: 768px) {
-    #services .img-wrap {
-        margin-left: auto;
-        margin-right: auto;
+    
+    #services h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+        position: relative;
     }
+
+    #services h3::after {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        border-bottom: 1px solid var(--main-color);
+        top: 0;
+        left: calc(25%/2);
+    }
+
+    #services .wrap {
+        padding-left: 0;
+        border-left: none;
+    }
+    
+    #services .img-wrap {
+        height: 100%;
+    }
+
+    .digital-marketing {
+        margin-left: calc(50% + 15px);
+    }
+    
 }
 
 
