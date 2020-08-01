@@ -204,15 +204,15 @@ nav {
 
 #about .img-wrap {
     width: 100%;
-    max-width: 340px;
+    height: 220px;
     display: block;
-    margin: 0 auto 2rem auto;
+    margin: 2rem auto 0 auto;
 }
 
 #about img {
-    height: auto;
+    height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -225,6 +225,15 @@ nav {
 @media (min-width: 768px) {
     #about .w-100 {
         margin-top: 57px;
+    }
+
+    #about .img-wrap {
+        height: 100%;
+        /* max-width: 340px; */
+    }
+
+    #about img {
+        object-fit: contain;
     }
 }
 
