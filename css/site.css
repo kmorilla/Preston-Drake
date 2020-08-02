@@ -540,12 +540,36 @@ nav {
 -------------------------------------------*/
 
 footer {
-    background-color: #000;
-    height: 70px;
+    background-color: var(--second-color);
+}
+
+.footer-wrap {
+    display: flex;
+    height: 100%;
 }
 
 footer p {
     color: #fff;
     margin-top: auto;
     margin-bottom: auto;
+    padding: 0 10px;
+    font-size: .9rem;
+}
+
+@media (max-width: 575.98px){
+    .footer-wrap {
+        flex-wrap: wrap;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+    }
+}
+
+@media (min-width: 576px) {
+    footer p:last-of-type {
+        margin-left: auto;
+    }
 }
