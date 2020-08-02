@@ -500,6 +500,12 @@ nav {
     margin-bottom: 15px;
 }
 
+#contact .contact-option:hover {
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
 .option {
     margin: auto;
     display: flex;
@@ -515,6 +521,35 @@ nav {
     color: var(--main-color);
     font-size: 1.1rem;
     margin: auto 0;
+}
+
+@media (min-width: 768px) {
+    #contact .wrap {
+        display: flex;
+    }
+
+    .contact-option {
+        max-width: 40%;
+        margin: 15px auto;
+    }
+
+    #contact h3 {
+        text-align: center;
+        padding-bottom: 1rem;
+        position: relative;
+    }
+
+    #contact h3::after {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        border-bottom: 1px solid var(--main-color);
+        top: 0;
+        left: calc(25%/2);
+    }
+
+
 }
 
 
