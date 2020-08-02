@@ -193,6 +193,13 @@ nav {
     opacity: .75;
 }
 
+@media (max-width: 765.98px) {
+    #home .wrap::before {
+        left: -15px;
+        width: calc(100% + 30px);
+    }
+}
+
 
 /*------------------------------------------
                     About
