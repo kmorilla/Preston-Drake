@@ -204,6 +204,14 @@ nav {
                     About
 -------------------------------------------*/
 
+.about-h3-md {
+    display: none;
+}
+
+.about-h3-sm {
+    display: block;
+}
+
 #about .img-wrap {
     width: 100%;
     height: min(55vw, 220px);
@@ -228,13 +236,34 @@ nav {
    
     #about .img-wrap {
         height: 100%;
-        padding-top: 57px;
         margin: 0 auto;
     }
 
     #about img {
         object-fit: contain;
     }
+
+    .about-h3-sm {
+        display: none;
+    }
+
+    .about-h3-md {
+        text-align: center;
+        padding-bottom: 1rem;
+        position: relative;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .about-h3-md::before {
+        content: '';
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        border-bottom: 1px solid var(--main-color);
+        top: 0;
+        left: calc(25%/2);
+    }  
 }
 
 
