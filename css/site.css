@@ -427,7 +427,7 @@ nav {
 }
 
 .logo {
-    max-width: 15%;  
+    max-width: 20%;  /* Adjust according to how many logos */
     margin: auto;
     padding: 0 5px;
 }
@@ -441,7 +441,7 @@ nav {
 
 @media (min-width: 576px) {
     .logo {
-        max-width: 14%;
+        max-width: 14%; /* Adjust according to how many logos */
     }    
 }
 
@@ -530,8 +530,6 @@ nav {
         top: 0;
         left: calc(25%/2);
     }
-
-
 }
 
 
