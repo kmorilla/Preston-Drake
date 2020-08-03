@@ -39,7 +39,7 @@ function CampaignHeaderAlignment() {
 }
 
 function LogoBuilder() {
-    var folder = "../img/logos";
+    var folder = "../img/logos/";
 
     $.ajax({
         url: folder,
