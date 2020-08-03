@@ -151,7 +151,7 @@ nav {
 -------------------------------------------*/
 
 #home {
-    background-image: linear-gradient(rgba(20,46,72,.5), rgba(20,46,72,.5)), url("../img/photo-1521504794987-75e6b93ee2b7.jpg");
+    background-image: linear-gradient(rgba(20,46,72,.5), rgba(20,46,72,.5)), url("../img/photo-1562884328-39da45501a9c.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -196,6 +196,12 @@ nav {
     }
 }
 
+@media (min-width: 992px) {
+    #home {
+        padding: 4rem 0;
+    }
+}
+
 
 /*------------------------------------------
                     About
@@ -229,10 +235,20 @@ nav {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #about .text-wrap {
+        padding: 0.5rem;
+    }
+    
+    #about .img-wrap {
+        padding: 0.5rem;
+    }
+}
+
 @media (min-width: 768px) {
    
     #about .img-wrap {
-        height: 100%;
+        height: min(55vw, 300px);
         margin: 0 auto;
     }
 
@@ -246,10 +262,10 @@ nav {
 
     .about-h3-md {
         text-align: center;
-        padding-bottom: 1rem;
+        padding-bottom: 1.5rem;
         position: relative;
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 
     .about-h3-md::before {
@@ -261,6 +277,20 @@ nav {
         top: 0;
         left: calc(25%/2);
     }  
+}
+
+@media (min-width: 992px) {
+    #about .img-wrap {
+        height: min(55vw, 300px);
+    }
+
+    #about .text-wrap {
+        padding: 1rem 1.5rem;
+    }
+    
+    #about .img-wrap {
+        padding: 1rem 1.5rem;
+    }
 }
 
 
@@ -390,15 +420,17 @@ nav {
     width: 100%;
     text-align: center;
     position: relative;;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: .6rem;
+    padding-right: .6rem;
 }
 
 #represent .wrap img {
-    width: 30vw;
-    height: 30vw;
+    width: 14vw;
+    height: 14vw;
     max-width: 150px;
     max-height: 150px;
+    min-width: 90px;
+    min-height: 90px;
     object-fit: cover;
     object-position: top center;
     border-radius: 50%;
@@ -423,7 +455,6 @@ nav {
 }
 
 .logo {
-    max-width: 20%;  /* Adjust according to how many logos */
     margin: auto;
     padding: 0 5px;
 }
@@ -435,9 +466,27 @@ nav {
     object-position: center;
 }
 
+/* Adjust according to how many logos */
+
+.logo {
+    max-width: 13%; /* xs size */
+}
+
 @media (min-width: 576px) {
     .logo {
-        max-width: 14%; /* Adjust according to how many logos */
+        max-width: 11%; 
+    }    
+}
+
+/* @media (min-width: 768px) {
+    .logo {
+        max-width: 11%; 
+    }    
+} */
+
+@media (min-width: 992px) {
+    .logo {
+        max-width: 7%; 
     }    
 }
 
@@ -459,6 +508,7 @@ nav {
         left: calc(25%/2);
     }  
 }
+
 
 /*------------------------------------------
                     Contact
