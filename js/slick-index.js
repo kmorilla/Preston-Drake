@@ -1,9 +1,13 @@
 $(document).ready(function () {
 
+
+
     $('.candidates').slick({
         infinite: true,
         mobileFirst: true,
-        arrows: false,
+        arrows: true,
+        autoplay: true,
+        autoplayspeed: 3000,
         responsive: [
             {
                 breakpoint: 0,
@@ -36,6 +40,15 @@ $(document).ready(function () {
     //     slidesToScroll: 1
     // });
 
-    // $('.slick-prev').empty().append('<ion-icon name="caret-back-sharp"></ion-icon>');
-    // $('.slick-next').empty().append('<ion-icon name="caret-forward-sharp"></ion-icon>');
+    Arrows();
+
+    $(window).resize(function () {
+        Arrows();
+    });
+
 });
+
+function Arrows() {
+    $('.slick-prev').empty().append('<ion-icon name="chevron-back-sharp"></ion-icon>');
+    $('.slick-next').empty().append('<ion-icon name="chevron-forward-sharp"></ion-icon>');
+}

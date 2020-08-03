@@ -4,12 +4,10 @@ $(document).ready(function () {
     ImgClick();
     CampaignHeaderAlignment();
     LogoBuilder();
-    // MosaicRow();
 
     $(window).resize(function () {
         NavBar();
         CampaignHeaderAlignment();
-        // MosaicRow();
     });
 });
 
@@ -54,12 +52,4 @@ function LogoBuilder() {
         }
     });
 }
-
-// function MosaicRow() {
-//     var containerWidth = $('#mosaic .container').width();
-//     var rowWidth = containerWidth / 3;
-//     var newRowWidth = 'repeat(3, ' + rowWidth + ')';
-//     console.log(rowWidth);
-//     $('.mosaic-grid').css('gridTemplateRows', rowWidth);
-// }
 
