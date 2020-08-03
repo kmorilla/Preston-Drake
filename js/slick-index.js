@@ -6,8 +6,10 @@ $(document).ready(function () {
         infinite: true,
         mobileFirst: true,
         arrows: true,
+        prevArrow: '<ion-icon name="chevron-back-sharp"></ion-icon>',
+        nextArrow: '<ion-icon name="chevron-forward-sharp"></ion-icon>',
         autoplay: true,
-        autoplayspeed: 3000,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 0,
@@ -48,7 +50,7 @@ $(document).ready(function () {
 
 });
 
-function Arrows() {
-    $('.slick-prev').empty().append('<ion-icon name="chevron-back-sharp"></ion-icon>');
-    $('.slick-next').empty().append('<ion-icon name="chevron-forward-sharp"></ion-icon>');
-}
+// function Arrows() {
+//     $('.slick-prev').empty().append('<ion-icon name="chevron-back-sharp"></ion-icon>');
+//     $('.slick-next').empty().append('<ion-icon name="chevron-forward-sharp"></ion-icon>');
+// }
