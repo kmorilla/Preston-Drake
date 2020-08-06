@@ -226,60 +226,45 @@ nav {
                     Services
 -------------------------------------------*/
 
-#services .wrap {
-    padding-left: 1rem;
-    border-left: 1px solid var(--main-color);
+#services ul {
+    padding-inline-start: 20px;
 }
 
 #services .img-wrap {
     width: 100%;
-    height: min(35vw, 200px);
-    display: block;
-    margin-bottom: 2rem;
+    height: 100%;
 }
 
-#services img {
-    width: 100%;
+#services .img-wrap img {
+    width: 70%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
 }
 
-#services ul {
-    padding-inline-start: 25px;
+@media (max-width: 767.98px) {
+    #services .info-wrap {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #services .info-wrap {
+        padding-top: 8rem;
+    }
 }
 
 @media (min-width: 768px) {
-    
-    #services h3 {
-        text-align: center;
-        padding-bottom: 1rem;
-        position: relative;
+    #services .img-wrap img {
+        width: 100%;
+        object-position: top;
     }
+}
 
-    #services h3::after {
-        content: '';
-        position: absolute;
-        width: 75%;
-        height: 100%;
-        border-bottom: 1px solid var(--main-color);
-        top: 0;
-        left: calc(25%/2);
+@media (min-width: 992px) {
+    #services .info-wrap {
+        padding-top: 10rem;
     }
-
-    #services .wrap {
-        padding-left: 0;
-        border-left: none;
-    }
-    
-    #services .img-wrap {
-        height: 100%;
-    }
-
-    .digital-marketing {
-        margin-left: calc(50% + 15px);
-    }
-    
 }
 
 
