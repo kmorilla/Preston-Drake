@@ -493,6 +493,10 @@ nav {
 }
 
 @media (min-width: 768px) {
+    #contact h2 {
+        text-align: center;
+    }
+    
     #contact .wrap {
         display: flex;
     }
