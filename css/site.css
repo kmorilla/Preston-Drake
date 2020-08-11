@@ -219,11 +219,17 @@ nav {
     content: '';
     position: absolute;
     background-color: #F1F1F1;
-    height: calc(100% + 10rem);
+    height: calc(100% + 7rem);
     width: 100%;
     top: -7rem;
     left: 0;
     z-index: -10;
+}
+
+@media (max-width: 767.98px) {
+    #about::before {
+        height: calc(100% + 10rem);
+    }
 }
 
 
@@ -242,34 +248,43 @@ nav {
 }
 
 #services .img-wrap img {
-    width: 70%;
+    width: 100%;
     height: 100%;
     object-fit: contain;
     object-position: center;
 }
 
 @media (max-width: 767.98px) {
-    #services .info-wrap {
-        margin-top: 2.5rem;
+    #services .img-wrap img {
+        display: block;
+        margin: auto;
+        width: 70%;
     }
-}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
     #services .info-wrap {
-        padding-top: 8rem;
+        margin-top: 3rem;
     }
 }
 
 @media (min-width: 768px) {
+    #services {
+        margin-top: 4.5rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #services .container {
+        max-width: 95%;
+    }
+
     #services .img-wrap img {
-        width: 100%;
         object-position: top;
     }
 }
 
-@media (min-width: 992px) {
-    #services .info-wrap {
-        padding-top: 10rem;
+@media (max-width: 991.98px) {
+    #services .info-wrap .digital-marketing {
+        margin-top: 1rem;
     }
 }
 
