@@ -30,23 +30,4 @@ $(document).ready(function () {
             }
         ]
     });
-
-    // $('.mosaic-grids').slick({
-    //     centerMode: false,
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1
-    // });
-
-    Arrows();
-
-    $(window).resize(function () {
-        Arrows();
-    });
-
 });
-
-// function Arrows() {
-//     $('.slick-prev').empty().append('<ion-icon name="chevron-back-sharp"></ion-icon>');
-//     $('.slick-next').empty().append('<ion-icon name="chevron-forward-sharp"></ion-icon>');
-// }
