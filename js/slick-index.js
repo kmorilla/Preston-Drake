@@ -1,34 +1,30 @@
 $(document).ready(function () {
 
-
-
-    $('.candidates').slick({
+    $('.clients').slick({
         infinite: true,
         mobileFirst: true,
         arrows: true,
         prevArrow: '<ion-icon name="chevron-back-sharp"></ion-icon>',
         nextArrow: '<ion-icon name="chevron-forward-sharp"></ion-icon>',
-        autoplay: true,
-        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 0,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                     slidesToScroll: 1,
                 }
             },
             {
                 breakpoint: 767.98,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 }
             },
             {
-                breakpoint: 1199.98,
+                breakpoint: 991.98,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                     slidesToScroll: 1,
                 }
             }
