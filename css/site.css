@@ -183,9 +183,10 @@ nav {
         padding: 0 0 2rem 2rem;
     }
     
-    #home .img-wrap {
+    #home a.img-wrap {
         width: 80%;
         margin-left: auto;
+        display: block;
     }
 }
 
