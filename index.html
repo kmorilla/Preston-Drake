@@ -27,7 +27,7 @@
     --------------------------------------------------------->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Preston Drake Management</a>
+            <a class="navbar-brand" href="#home">Preston Drake Management</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon">
@@ -38,19 +38,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Represent</a>
+                        <a class="nav-link" href="#represent">Clients</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -70,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-8 img-col">
-                    <a class="img-wrap" data-toggle="modal" data-target="#exampleModalCenter">
+                    <a class="img-wrap" href="#" data-toggle="modal" data-target="#exampleModalCenter">
                         <img src="./img/omar-lopez-rwF_pJRWhAI-unsplash.jpg" alt="">
                     </a>
                 </div>
@@ -82,7 +82,7 @@
     <!--------------------------------------------------------
                                 About 
     --------------------------------------------------------->
-    <section id="about" class="padding-b">
+    <section id="about" class="padding-tb">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-11 col-sm-12 col-lg-9">
@@ -118,11 +118,11 @@
     <!--------------------------------------------------------
                                 Services 
     --------------------------------------------------------->
-    <section id="services" class="padding-b">
+    <section id="services" class="padding-tb">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-5 col-lg-4">
-                    <a data-toggle="modal" data-target="#exampleModalCenter" class="img-wrap"><img
+                    <a data-toggle="modal" href="#" data-target="#exampleModalCenter" class="img-wrap"><img
                             src="./img/photo-1521745628017-e158aefe8c98.jpg" alt=""></a>
                 </div>
                 <div class="col-12 col-md-7 col-lg-8">
@@ -184,31 +184,23 @@
 
 
     <!--------------------------------------------------------
-                                Mosaic 
+                                Slideshow 
     --------------------------------------------------------->
-    <!-- <section id="mosaic" class="padding-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="mosaic-grids">
+    <section id="slideshow" class="padding-tb">
+        <div class="slides">
+            <a data-toggle="modal" href="#represent" data-target="#exampleModalCenter" class="slide"><img
+                    src="./img/photo-1541872705-1f73c6400ec9.jpg" alt=""></a>
 
-                        <div class="mosaic-grid">
-                            <a class="p1" data-toggle="modal" data-target="#exampleModalCenter"><img
-                                    src="./img/photo-1521745628017-e158aefe8c98.jpg" alt=""></a>
-                            <a class="l1" data-toggle="modal" data-target="#exampleModalCenter"><img
-                                    src="./img/photo-1541872705-1f73c6400ec9.jpg" alt=""></a>
-                            <a class="l2" data-toggle="modal" data-target="#exampleModalCenter"><img
-                                    src="./img/photo-1469248620856-e8c981d98aff.jpg" alt=""></a>
-                            <a class="l3" data-toggle="modal" data-target="#exampleModalCenter"><img
-                                    src="./img/photo-1555293442-818eb55f7ca0.jpg" alt=""></a>
-                            <a class="p2" data-toggle="modal" data-target="#exampleModalCenter"><img
-                                    src="./img/photo-1587847870627-a34356e5ae67.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a data-toggle="modal" data-target="#exampleModalCenter" class="slide"><img
+                    src="./img/photo-1555293442-818eb55f7ca0.jpg" alt=""></a>
+
+            <a data-toggle="modal" data-target="#exampleModalCenter" class="slide"><img
+                    src="./img/photo-1521504794987-75e6b93ee2b7.jpg" alt=""></a>
+
+            <a data-toggle="modal" data-target="#exampleModalCenter" class="slide"><img
+                    src="./img/photo-1540908390241-82158ab62887.jpg" alt=""></a>
         </div>
-    </section> -->
+    </section>
 
 
     <!--------------------------------------------------------
@@ -329,7 +321,7 @@
     <!--------------------------------------------------------
                                 Contact 
     --------------------------------------------------------->
-    <section id="contact" class="padding-b">
+    <section id="contact" class="padding-tb">
         <div class="container">
             <div class="row">
                 <div class="col-11 col-sm-12">
@@ -361,14 +353,29 @@
     <!--------------------------------------------------------
                                 Footer 
     --------------------------------------------------------->
-    <footer class="footer mt-auto py-3">
-        <div class="container h-100">
-            <div class="footer-wrap">
-                <p>Copyright &copy; 2020</p>
-                <p>Made by Kevyn Morilla</p>
+    <footer class="padding-t">
+        <div class="footer">
+            <div class="container h-100">
+                <div class="footer-wrap">
+                    <p>Copyright &copy; 2020</p>
+                    <p>Made by Kevyn Morilla</p>
+                </div>
             </div>
         </div>
     </footer>
+
+
+    <!--------------------------------------------------------
+                                Footer 
+    --------------------------------------------------------->
+    <section>
+        <a href="#home" class="up">
+            <div>
+                <ion-icon name="chevron-up-sharp"></ion-icon>
+            </div>
+        </a>
+    </section>
+
 
 
     <!--------------------------------------------------------

@@ -30,4 +30,25 @@ $(document).ready(function () {
             }
         ]
     });
+
+    $('.slides').slick({
+        infinite: true,
+        centerPadding: '60px',
+        mobileFirst: true,
+        arrows: true,
+        prevArrow: '<ion-icon name="chevron-back-sharp"></ion-icon>',
+        nextArrow: '<ion-icon name="chevron-forward-sharp"></ion-icon>',
+        centerMode: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 0,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
+    });
+
 });
