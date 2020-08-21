@@ -371,7 +371,7 @@ nav a:hover {
 .logos {
     background-color: var(--main-color);
     padding: 1rem .5rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     position: relative;
     flex-wrap: wrap;
     display: flex;
