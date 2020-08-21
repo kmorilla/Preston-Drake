@@ -5,6 +5,10 @@
     font-size: min(4.5vw, 16px);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: var(--second-color);
@@ -182,7 +186,7 @@ nav a:hover {
         padding: 0 0 2rem 2rem;
     }
     
-    #home a.img-wrap {
+    #home div.img-wrap {
         width: 80%;
         margin-left: auto;
         display: block;
@@ -251,6 +255,8 @@ nav a:hover {
     #services .img-wrap img {
         display: block;
         width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #services .info-wrap {
