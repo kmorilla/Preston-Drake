@@ -417,7 +417,51 @@ nav a:hover {
 }
 
 
+/*------------------------------------------
+                    Blog
+-------------------------------------------*/
 
+#blog h2 {
+    text-align: center;
+}
+
+.blog-buttons {
+    display: flex;
+}
+
+.blog-button{
+    background-color: #fff;
+    display: inline-flex;
+    border: 1px solid var(--main-color);
+    color: var(--second-color);
+    padding: .8rem 1.2rem;
+    text-transform: uppercase;
+}
+
+.blog-button:hover {
+    border: 1px solid var(--second-color);
+    text-decoration: none;
+    color: var(--main-color);
+    background-color: var(--second-color);
+}
+
+.load-more-button {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.load-more-only-button {
+    margin: auto;
+}
+
+.load-less-button {
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+.blog-button p {
+    margin-bottom: 0;
+}
 
 /*------------------------------------------
                     Contact
@@ -430,7 +474,7 @@ nav a:hover {
 
 .contact-option {
     display: flex;
-    border: 1px solid var(--second-color);
+    border: 1px solid var(--main-color);
     width: 100%;
     padding: .5rem 0;
     margin-top: 15px;
@@ -438,6 +482,7 @@ nav a:hover {
 }
 
 #contact .contact-option:hover {
+    border: 1px solid var(--secondary-color);
     text-decoration: none;
     color: var(--main-color);
     background-color: var(--second-color);
