@@ -1,6 +1,7 @@
 :root {
-    --main-color: #F2CB40;
-    --second-color: #142E48;
+    --gold-color: #F2CB40;
+    --blue-color: #142E48;
+    --gray-color: #F1F1F1;
     --other-font: 'Playfair Display', serif;
     font-size: min(4.5vw, 16px);
 }
@@ -11,11 +12,11 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    color: var(--second-color);
+    color: var(--blue-color);
 }
 
 a {
-    color: var(--second-color);
+    color: var(--blue-color);
 }
 
 h1, h2, h4 {
@@ -29,7 +30,7 @@ h1 {
 h2 {
     margin-bottom: 1.5rem;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--gold-color);
 }
 
 h4 {
@@ -42,16 +43,16 @@ button:focus {
 }
 
 .padding-tb {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .padding-t {
-    padding-top: 4rem;
+    padding-top: 5rem;
 }
 
 .padding-b {
-    padding-bottom: 4rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -95,7 +96,7 @@ button:focus {
     font-size: 2rem;
     background-color: #fff;
     opacity: .8;
-    color: var(--main-color);
+    color: var(--gold-color);
     text-align: center;
     position: absolute;
     top: calc(50% - 1.15rem);
@@ -124,7 +125,7 @@ nav {
 }
 
 nav a:hover {
-    color: var(--main-color);
+    color: var(--gold-color);
 }
 
 .navbar {
@@ -140,7 +141,7 @@ nav a:hover {
 }
 
 .navbar-toggler span {
-    color: var(--main-color);
+    color: var(--gold-color);
     font-size: 2.5rem;
     display: flex;
     width: auto;
@@ -222,7 +223,7 @@ nav a:hover {
 #about::before {
     content: '';
     position: absolute;
-    background-color: #F1F1F1;
+    background-color: var(--gray-color);
     height: calc(100% + 7rem);
     width: 100%;
     top: -7rem;
@@ -327,7 +328,7 @@ nav a:hover {
     left: 0;
     height: calc(100% - 6rem);
     width: 100%;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--gold-color);
     z-index: -10;
 }
 
@@ -352,7 +353,7 @@ nav a:hover {
 .name {
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--main-color);
+    color: var(--gold-color);
     font-family: var(--other-font);
     margin-bottom: 0;
     margin-top: .5rem;
@@ -374,10 +375,15 @@ nav a:hover {
     right: -20px;
 }
 
-.logos {
-    background-color: var(--main-color);
-    padding: 1rem .5rem;
+.logo-container {
+    background-color: var(--gold-color);    
     margin-top: 4rem;
+}
+
+.logos {
+    width: 80%;
+    padding: 1rem .5rem;
+    margin: auto;
     position: relative;
     flex-wrap: wrap;
     display: flex;
@@ -425,24 +431,30 @@ nav a:hover {
     text-align: center;
 }
 
+.blog-row {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
 .blog-buttons {
     display: flex;
+    margin-top: 1rem;
 }
 
-.blog-button{
-    background-color: #fff;
+.button{
+    background-color: var(--blue-color);
     display: inline-flex;
-    border: 1px solid var(--main-color);
-    color: var(--second-color);
-    padding: .8rem 1.2rem;
-    text-transform: uppercase;
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
+    color: #fff;
+    padding: .5rem 1.2rem;
 }
 
-.blog-button:hover {
-    border: 1px solid var(--second-color);
+.button:hover {
+    border: 1px solid var(--gold-color);
     text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--second-color);
+    color: var(--blue-color);
+    background-color: #fff;
 }
 
 .load-more-button {
@@ -467,6 +479,10 @@ nav a:hover {
                     Contact
 -------------------------------------------*/
 
+#contact {
+    background-color: var(--gray-color);
+}
+
 #contact .wrap {
     width: 90%;
     margin: auto;
@@ -474,18 +490,21 @@ nav a:hover {
 
 .contact-option {
     display: flex;
-    border: 1px solid var(--main-color);
+    color: #fff;
+    background-color: var(--blue-color);
+    border: 1px solid var(--blue-color);
+    border-radius: 1rem;
     width: 100%;
-    padding: .5rem 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 #contact .contact-option:hover {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--gold-color);
     text-decoration: none;
-    color: var(--main-color);
-    background-color: var(--second-color);
+    color: var(--blue-color);
+    background-color: #fff;
 }
 
 .option {
@@ -500,7 +519,7 @@ nav a:hover {
 }
 
 #contact ion-icon {
-    color: var(--main-color);
+    color: var(--gold-color);
     font-size: 1.1rem;
     margin: auto 0;
 }
@@ -530,7 +549,7 @@ nav a:hover {
         position: absolute;
         width: 75%;
         height: 100%;
-        border-bottom: 1px solid var(--main-color);
+        border-bottom: 1px solid var(--gold-color);
         top: 0;
         left: calc(25%/2);
     }
@@ -546,7 +565,7 @@ nav a:hover {
     bottom: 50px;
     right: 5vw;
     padding: min(4vw, 1rem);
-    background-color: var(--main-color);
+    background-color: var(--gold-color);
     opacity: .7;
 }
 
@@ -564,7 +583,7 @@ nav a:hover {
 -------------------------------------------*/
 
 .footer {
-    background-color: var(--second-color);
+    background-color: var(--blue-color);
     padding: 1.5rem 0;
     margin-top: auto;
 }
