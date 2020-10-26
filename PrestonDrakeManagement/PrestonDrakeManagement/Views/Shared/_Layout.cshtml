@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    @Styles.Render("~/Content/css")
+
+    <title>Preston Drake Management</title>
+
+</head>
+
+<body>
+
+    <!--------------------------------------------------------
+                                   Navbar
+       --------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Preston Drake Management</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#represent">Clients</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    @RenderBody()
+
+
+    <!--------------------------------------------------------
+                                Footer
+    --------------------------------------------------------->
+    <footer>
+        <div class="footer">
+            <div class="container h-100">
+                <div class="footer-wrap">
+                    <p>Copyright &copy; 2020</p>
+                    <p>Made by Kevyn Morilla</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--------------------------------------------------------
+                                Footer
+    --------------------------------------------------------->
+    <section>
+        <a href="#home" class="up">
+            <div>
+                <ion-icon name="chevron-up-sharp"></ion-icon>
+            </div>
+        </a>
+    </section>
+
+
+
+    <!--------------------------------------------------------
+                                JS
+    --------------------------------------------------------->
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <!-- Ionic -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+    @Scripts.Render("~/bundles/slick")
+    @Scripts.Render("~/bundles/index")
+    @Scripts.Render("~/bundles/slick-index")
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>

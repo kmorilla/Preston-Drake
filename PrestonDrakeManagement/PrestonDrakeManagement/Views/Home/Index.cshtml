@@ -1,0 +1,335 @@
+﻿<!--------------------------------------------------------
+                        Home
+--------------------------------------------------------->
+<section id="home">
+    <div class="container-xl">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="info-wrap">
+                    <h1>Preston Drake Management</h1>
+                </div>
+            </div>
+            <div class="col-12 col-md-8 img-col">
+                <div class="img-wrap">
+                    <img src="../Images/omar-lopez-rwF_pJRWhAI-unsplash1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        About
+--------------------------------------------------------->
+<section id="about" class="padding-tb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-12 col-lg-9">
+                <h2>About</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-11 col-sm-12 col-md-4 col-lg-3">
+                <p>
+                    At Preston Drake Management, we are committed to integrity, consistency, and excellence;
+                    these
+                    are the values that distinguishes us from others.
+                </p>
+            </div>
+            <div class="col-11 col-sm-12 col-md-4 col-lg-3">
+                <p>
+                    We are a selective grassroots advocacy, community organizing, and fundraising firm. At
+                    Preston
+                    Drake Management, our clients have the option to choose the service or services that is
+                    tailored
+                    to their campaign needs.
+                </p>
+            </div>
+            <div class="col-11 col-sm-12 col-md-4 col-lg-3">
+                <p>
+                    Our network of professional door to door canvassers, phone bankers, fundraisers, and
+                    organizers
+                    gives our clients the necessary competitive advantage that lead to victory.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        Services
+--------------------------------------------------------->
+<section id="services" class="padding-tb">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 col-lg-4">
+                <div class="img-wrap"><img src="/Images/photo-1521745628017-e158aefe8c981.jpg" alt=""></div>
+            </div>
+            <div class="col-12 col-md-7 col-lg-8">
+                <div class="row info-wrap">
+                    <div class="col-11 col-sm-12">
+                        <h2>Services</h2>
+                    </div>
+                    <div class="col-11 col-sm-12 col-lg-6">
+                        <h4>Campaign Management</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo
+                            duo
+                            dolores et ea rebum.
+                        </p>
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet,
+                            </li>
+                            <li>
+                                Consetetur sadipscing elitr,
+                            </li>
+                            <li>
+                                Sed diam nonumy eirmod
+                            </li>
+                            <li>
+                                Tempor invidunt ut labore et
+                            </li>
+                            <li>
+                                Dolore magna aliquyam erat
+                            </li>
+                            <li>Sed diam voluptua. At vero eos et </li>
+                        </ul>
+                    </div>
+                    <div class="col-11 col-sm-12 col-lg-6">
+                        <h4 class="digital-marketing">Digital Marketing</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt
+                            ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+                            et justo
+                            duo
+                            dolores et ea rebum.
+                        </p>
+                        <ul>
+                            <li>
+                                Lorem ipsum dolor sit amet,
+                            </li>
+                            <li>
+                                Consetetur sadipscing elitr,
+                            </li>
+                            <li>
+                                Sed diam nonumy eirmod
+                            </li>
+                            <li>
+                                Tempor invidunt ut labore et
+                            </li>
+                            <li>
+                                Dolore magna aliquyam erat
+                            </li>
+                            <li>Sed diam voluptua. At vero eos et </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        Slideshow
+--------------------------------------------------------->
+<section id="slideshow" class="padding-tb">
+    <div class="slides">
+        @foreach (var image in (IEnumerable<string>) ViewBag.SlideShow)
+        {
+            <div class="slide"><img src="@Url.Content((image))" alt=""></div>
+        }
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        Represent
+--------------------------------------------------------->
+<section id="represent" class="padding-t">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 col-sm-12">
+                <h2>Clients</h2>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-11 col-sm-12">
+                <div class="clients">
+                    <div class="wrap">
+                        <div class="client">
+                            <div class="img-wrap"><img src="/Images/colorful-dress1.jpg" alt=""></div>
+                            <div class="client-header">
+                                <p class="name">Lorem ipsum </p>
+                                <p class="title">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <p class="review">
+                                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy
+                                eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="client">
+                            <div class="img-wrap"><img src="/Images/colorful-dress1.jpg" alt=""></div>
+                            <div class="client-header">
+                                <p class="name">Lorem ipsum </p>
+                                <p class="title">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <p class="review">
+                                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy
+                                eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="client">
+                            <div class="img-wrap"><img src="/Images/colorful-dress1.jpg" alt=""></div>
+                            <div class="client-header">
+                                <p class="name">Lorem ipsum </p>
+                                <p class="title">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <p class="review">
+                                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy
+                                eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="client">
+                            <div class="img-wrap"><img src="/Images/colorful-dress1.jpg" alt=""></div>
+                            <div class="client-header">
+                                <p class="name">Lorem ipsum </p>
+                                <p class="title">Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <p class="review">
+                                "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                                nonumy
+                                eirmod tempor
+                                invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col-12">
+            <div class="logo-container">
+                <div class="logos">
+
+                    @foreach (var image in (IEnumerable<string>) ViewBag.Logos)
+                    {
+                        <div class="logo"><img src="@Url.Content((image))" alt=""></div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        Blog
+--------------------------------------------------------->
+<section id="blog" class="padding-tb">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 col-sm-12">
+                <h2>Blog</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="row blog-row">
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>Blog1</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog2</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog3</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>Blog1</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog2</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog3</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog2</h4>
+                    </div>
+                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
+                        <h4>blog3</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-11 col-sm-12">
+                <div class="blog-buttons">
+                    <button class="blog-button load-more-button" type="button">Load More</button>
+                    <button class="blog-button load-less-button" type="button">Load Less</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--------------------------------------------------------
+                        Contact
+--------------------------------------------------------->
+<section id="contact" class="padding-tb">
+    <div class="container">
+        <div class="row">
+            <div class="col-11 col-sm-12">
+                <h2>Contact Us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-11 col-sm-12">
+                <div class="wrap">
+                    <a href="tel:5555555555" class="contact-option">
+                        <div class="option">
+                            <ion-icon name="call-sharp"></ion-icon>
+                            <p>(555) 555-5555</p>
+                        </div>
+                    </a>
+                    <a href="mailto:email@myemail.com" class="contact-option">
+                        <div class="option">
+                            <ion-icon name="mail-sharp"></ion-icon>
+                            <p>email@myemail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

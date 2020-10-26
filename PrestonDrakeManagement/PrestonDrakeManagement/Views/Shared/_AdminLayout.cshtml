@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@400;600;700&display=swap"
+          rel="stylesheet">
+
+    @Styles.Render("~/Content/css")
+
+    <title>Admin Page: @ViewBag.Title</title>
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+
+            @RenderBody()
+
+        </div>
+    </div>
+</div>
+
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/bootstrap")
+
+<!-- Ionic -->
+<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+
+@RenderSection("scripts", required: false)
+
+</body>
+
+</html>
