@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PrestonDrakeManagement.Models.Blog>
+
+
+<div class="row">
+    
+    @foreach (var blog in Model)
+    {
+        <div class="col-4">
+            <div class="blog-post">
+                <h4>@blog.Title</h4>
+                <p>@blog.Description</p>
+                <a href="@blog.Url" target="_blank">Learn More</a>
+            </div>
+        </div>
+    }
+
+</div>
+
+@if (ViewBag.Max)
+{
+    <div class="row">
+        <div class="col-11 col-sm-12">
+            <button class="load-more-button" type="button" onclick="loadMore()">Load More</button>
+        </div>
+    </div>
+}
+

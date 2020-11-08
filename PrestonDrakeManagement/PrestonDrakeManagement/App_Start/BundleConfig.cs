@@ -24,7 +24,7 @@ namespace PrestonDrakeManagement
                 "~/Scripts/slick-index.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/index").Include(
-                "~/Scripts/index.js"));
+                "~/Scripts/custom/index/blog-posts.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                 "~/Content/bootstrap.css",

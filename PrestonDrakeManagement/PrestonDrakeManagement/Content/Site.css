@@ -431,42 +431,43 @@ nav {
     text-align: center;
 }
 
-.blog-buttons {
-    display: flex;
+.blog-post {
+    padding: 1rem;
+    margin-bottom: 1rem;
 }
 
-.blog-button {
-    background-color: var(--blue-color);
-    display: inline-flex;
-    border: 1px solid var(--blue-color);
-    border-radius: 1rem;
+.blog-post a {
+    display: block;
+    width: max-content;
+    background-color: var(--gold-color);
+    border: 1px solid var(--gold-color);
+    padding: .2rem .7rem;
     color: #fff;
-    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    margin-left: auto;
 }
 
-    .blog-button:hover {
-        border: 1px solid var(--blue-color);
-        text-decoration: none;
-        color: var(--gold-color);
-        background-color: var(--blue-color);
-    }
+.blog-post a:hover {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid var(--gold-color);
+    color: var(--blue-color);
+}
 
 .load-more-button {
-    margin-left: auto;
-    margin-right: 1rem;
+    display: block;
+    background-color: #fff;
+    border: 1px solid var(--gold-color);
+    color: var(--blue-color);
+    padding: .5rem 1.5rem;
+    margin: 2rem auto 0 auto;
 }
 
-.load-more-only-button {
-    margin: auto;
-}
-
-.load-less-button {
-    margin-left: 1rem;
-    margin-right: auto;
-}
-
-.blog-button p {
-    margin-bottom: 0;
+.load-more-button:hover {
+    border: 1px solid var(--blue-color);
+    text-decoration: none;
+    color: var(--gold-color);
+    background-color: var(--blue-color);
 }
 
 /*------------------------------------------
@@ -477,17 +478,16 @@ nav {
     background-color: var(--gray-color);
 }
 
-    #contact .wrap {
-        width: 90%;
-        margin: auto;
-    }
+#contact .wrap {
+    width: 90%;
+    margin: auto;
+}
 
 .contact-option {
     display: flex;
-    color: #fff;
-    background-color: var(--blue-color);
-    border: 1px solid var(--blue-color);
-    border-radius: 1rem;
+    color: var(--blue-color);
+    background-color: #fff;
+    border: 1px solid var(--gold-color);
     width: 100%;
     padding: 1rem 0;
     margin-top: 1rem;
@@ -495,10 +495,10 @@ nav {
 }
 
 #contact .contact-option:hover {
-    border: 1px solid var(--gold-color);
+    border: 1px solid var(--blue-color);
     text-decoration: none;
-    color: var(--blue-color);
-    background-color: #fff;
+    color: var(--gold-color);
+    background-color: var(--blue-color);
 }
 
 .option {

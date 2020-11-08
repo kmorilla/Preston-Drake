@@ -1,4 +1,5 @@
-﻿<!--------------------------------------------------------
+﻿
+<!--------------------------------------------------------
                         Home
 --------------------------------------------------------->
 <section id="home">
@@ -260,44 +261,13 @@
                 <h2>Blog</h2>
             </div>
         </div>
-        <div class="row">
-            <div class="col-12">
-                <div class="row blog-row">
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>Blog1</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog2</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog3</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>Blog1</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog2</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog3</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog2</h4>
-                    </div>
-                    <div class="col-11 col-sm-12 col-md-6 col-lg-4 blog-post">
-                        <h4>blog3</h4>
-                    </div>
+        
+        <div class="blog-posts-refresh">
 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-11 col-sm-12">
-                <div class="blog-buttons">
-                    <button class="blog-button load-more-button" type="button">Load More</button>
-                    <button class="blog-button load-less-button" type="button">Load Less</button>
-                </div>
-            </div>
+            @{
+            Html.RenderAction("BlogPosts", "Home");
+            }
+
         </div>
     </div>
 </section>
