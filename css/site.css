@@ -535,10 +535,6 @@ nav a:hover {
     background-color: #fff;
 }
 
-.last-icon {
-    margin-top: 1rem;
-}
-
 .contact-icon ion-icon {
     font-size: 1.2rem;
     margin: auto 0;
@@ -549,14 +545,9 @@ nav a:hover {
     margin-top: 1rem;
 }
 
-
 @media (min-width: 768px) {
     #contact h2 {
         text-align: left;
-    }
-
-    .last-icon {
-        margin-top: 0;
     }
 }
 
